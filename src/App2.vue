@@ -68,10 +68,41 @@ body {
   align-items: center;
 
   .header {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--main-text-color);
+  }
+
+  .footer {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--main-text-color);
+
+    .profile {
+      position: relative;
+      cursor: pointer;
+
+      .avatar {
+        background: #D9D9D9 url("assets/avatar_i.png") no-repeat;
+        background-size: 1.5rem 1.5rem;
+        background-position: center;
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+      }
+      .label {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: .5rem;
+        font-size: .75rem;
+        width: 5rem;
+      }
+    }
   }
 
   .items {
