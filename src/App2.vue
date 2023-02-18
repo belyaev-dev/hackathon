@@ -50,6 +50,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
+  &+.row {
+    margin-top: 1rem;
+  }
 }
 
 .container {
