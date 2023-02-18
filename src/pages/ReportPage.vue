@@ -61,13 +61,14 @@
 </template>
 
 <script>
+import MainLayout from '../layout/Main.vue'
 import MainMenu from '../layout/MainMenu.vue'
 import ItemsTree from '../components/ItemsTree.vue'
 import ObjectProperties from '../components/ObjectProperties.vue'
 
 export default {
   name: 'ReportPage',
-  components: { ObjectProperties, ItemsTree, MainMenu },
+  components: { ObjectProperties, ItemsTree, MainMenu, MainLayout },
 }
 </script>
 

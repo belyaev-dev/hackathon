@@ -37,6 +37,10 @@ const MENU = [
     page: '/video',
     title: 'Видеонаблюдение'
   },
+  {
+    page: '/application',
+    title: 'Заявки'
+  }
 ]
 
 export default {

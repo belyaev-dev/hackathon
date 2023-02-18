@@ -1,5 +1,5 @@
 <template>
-  <card>
+  <card style="width: 24rem;">
     <ul>
       <li class="green">
         Бизнес центр
@@ -49,7 +49,13 @@ export default {
 <style lang="scss">
 
 ul {
-  margin-top: 15px;
+  flex: 1 1 100%;
+  padding: 0;
+
+  ul {
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 li {
@@ -57,10 +63,10 @@ li {
   flex-wrap: wrap;
   align-items: flex-start;
   line-height: 1.25;
-  //flex: ;
 
   &::before {
     content: '';
+    display: inline-block;
     width: 1em;
     height: 1.25em;
     margin-right: .25rem;

@@ -6,6 +6,7 @@ import TasksPage from './pages/TasksPage.vue'
 import ControlPage from './pages/ControlPage.vue'
 import VideoPage from './pages/VideoPage.vue'
 import ReportPage from './pages/ReportPage.vue'
+import ApplicationPage from './pages/ApplicationPage.vue'
 
 const routes = [
   {
@@ -36,6 +37,10 @@ const routes = [
     path: '/report',
     component: ReportPage
   },
+  {
+    path: '/application',
+    component: ApplicationPage
+  }
 ]
 
 export default createRouter({
