@@ -31,8 +31,16 @@ const MENU = [
   },
   {
     page: '/report',
+    title: 'Отчетность'
+  },
+  {
+    page: '/video',
     title: 'Видеонаблюдение'
   },
+  {
+    page: '/application',
+    title: 'Заявки'
+  }
 ]
 
 export default {

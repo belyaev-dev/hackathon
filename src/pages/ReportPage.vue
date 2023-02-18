@@ -3,52 +3,60 @@
   <main-layout>
   <div class="page-report">
 
-    <div class="container">
-      <div class="indicator-list">
-        <div class="prev"></div>
-        <div class="indicator">
-          <div class="title">Предыдущий месяц</div>
-          <div class="month">Январь</div>
-          <div class="chart">
-            <div class="bar" style="--green:1;">1</div>
-            <div class="bar" style="">2</div>
-            <div class="bar" style="--green:1;--red:.6;">3</div>
-            <div class="bar" style="--red:.2;">4</div>
+    <div class="row">
+      <ItemsTree/>
+
+      <div class="container" style="flex: 1 1 0;display:flex;flex-direction: column;justify-content: flex-end">
+        <div class="indicator-list">
+          <div class="prev"></div>
+          <div class="indicator">
+            <div class="title">Предыдущий месяц</div>
+            <div class="month">Январь</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
+            </div>
+            <div class="more">Подробнее</div>
           </div>
-          <div class="more">Подробнее</div>
-        </div>
-        <div class="indicator active">
-          <div class="title">Текущий месяц</div>
-          <div class="label">Общий оборот</div>
-          <div class="value">82 000</div>
-          <div class="label">Чистая прибыль</div>
-          <div class="value">34 000</div>
-          <div class="month">Февраль</div>
-          <div class="chart">
-            <div class="bar" style="--green:1;">1</div>
-            <div class="bar" style="">2</div>
-            <div class="bar" style="--green:1;--red:.6;">3</div>
-            <div class="bar" style="--red:.2;">4</div>
+          <div class="indicator active">
+            <div class="title">Текущий месяц</div>
+            <div class="label">Общий оборот</div>
+            <div class="value">82 000</div>
+            <div class="label">Чистая прибыль</div>
+            <div class="value">34 000</div>
+            <div class="month">Февраль</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
+            </div>
+            <div class="more">Подробнее</div>
           </div>
-          <div class="more">Подробнее</div>
-        </div>
-        <div class="indicator">
-          <div class="title">Прогноз</div>
-          <div class="month">Март</div>
-          <div class="chart">
-            <div class="bar" style="--green:1;">1</div>
-            <div class="bar" style="">2</div>
-            <div class="bar" style="--green:1;--red:.6;">3</div>
-            <div class="bar" style="--red:.2;">4</div>
+          <div class="indicator">
+            <div class="title">Прогноз</div>
+            <div class="month">Март</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
+            </div>
+            <div class="more">Подробнее</div>
           </div>
-          <div class="more">Подробнее</div>
+          <div class="next"></div>
         </div>
-        <div class="next"></div>
+
+        <div class="legend">
+          <div class="profit">Прибыль</div>
+          <div class="expense">Издержки</div>
+        </div>
       </div>
 
-      <div class="legend">
-        <div class="profit">Прибыль</div>
-        <div class="expense">Издержки</div>
+      <div class="container" style="flex: 1 1 100%;">
+        BOTTOM
       </div>
     </div>
 
@@ -59,22 +67,31 @@
 <script>
 import MainLayout from '../layout/Main.vue'
 import MainMenu from '../layout/MainMenu.vue'
+import ItemsTree from '../components/ItemsTree.vue'
 export default {
   name: 'ReportPage',
-  components: { MainMenu, MainLayout }
+  components: { ItemsTree, MainMenu, MainLayout }
 }
 </script>
 
 <style lang="scss">
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
 .page-report {
   color: #fff;
   width: 100%;
+  padding: 2rem;
 }
 
 .container {
   border: 1px solid #656565;
   border-radius: .75rem;
-
+  padding: 1rem;
 }
 
 .legend {

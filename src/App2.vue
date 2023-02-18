@@ -10,7 +10,7 @@ export default {
 
     if ( user.username ) {
     // if ( false && user.username ) {
-      this.$router.push('/')
+    //   this.$router.push('/')
     } else {
       this.$router.push('/login')
     }
@@ -57,6 +57,7 @@ body {
     padding: 1rem 1rem;
     font-size: 1.125rem;
     font-weight: 600;
+    color: var(--main-text-color);
   }
 
   .items {
