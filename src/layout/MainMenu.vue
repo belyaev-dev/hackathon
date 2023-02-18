@@ -29,6 +29,10 @@ const MENU = [
     page: '/control',
     title: 'Управление'
   },
+  {
+    page: '/video',
+    title: 'Видеонаблюдение'
+  },
 ]
 
 export default {

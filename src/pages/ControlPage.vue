@@ -10,7 +10,6 @@ import Card from '../components/card.vue'
       <card>
         <ul>
           <li>
-
             <span>
               <img src="../assets/Icon.png">
               Бизнес центр
