@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-color: #000321;
+  --main-text-color: white;
+  --text-bg-color: #213547;
+
+  --main-border-color: #656565;
 }
 
 a {
@@ -23,12 +29,22 @@ a:hover {
   color: #535bf2;
 }
 
+ul {
+  list-style: none;
+}
+
+ul li {
+  color: var(--main-text-color);
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--main-color)
 }
 
 h1 {

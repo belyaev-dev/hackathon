@@ -48,7 +48,6 @@ body {
   --menu-bd: hsl(var(--hue), 60%, 93%);
 
   min-width: 250px;
-  background-color: var(--menu-bg);
   border-right: 1px solid var(--menu-bd);
 
   .header {
@@ -68,7 +67,7 @@ body {
     transition: background-color .2s;
 
     &:hover {
-      background-color: #00000008;
+      background-color: var(--text-bg-color);
     }
   }
 }

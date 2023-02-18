@@ -49,7 +49,6 @@ body {
   --menu-bd: hsl(var(--hue), 60%, 93%);
 
   min-width: 250px;
-  background-color: var(--menu-bg);
   border-right: 1px solid var(--menu-bd);
   display: flex;
   align-items: center;
@@ -72,8 +71,10 @@ body {
     cursor: pointer;
     transition: background-color .2s;
 
+    color: var(--main-text-color);
+
     &:hover {
-      background-color: #00000008;
+      background-color: var(--text-bg-color);
     }
   }
 }
