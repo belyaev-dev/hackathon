@@ -8,7 +8,7 @@ export const useTasks = () => {
     const state = reactive({
         listAllTasks: [],
         titleTask: null,
-        descriptionTask: null
+        descriptionTask: null,
     })
 
     /**

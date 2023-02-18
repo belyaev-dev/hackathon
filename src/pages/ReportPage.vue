@@ -101,7 +101,7 @@ const ITEMS = [
 
 export default {
   name: 'ReportPage',
-  components: { ItemsTree, MainMenu, MainLayout }
+  components: { ItemsTree, MainMenu, MainLayout },
   data() {
     return {
       ITEMS
