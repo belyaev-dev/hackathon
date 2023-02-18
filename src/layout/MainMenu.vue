@@ -30,6 +30,10 @@ const MENU = [
     title: 'Управление'
   },
   {
+    page: '/report',
+    title: 'Отчетность'
+  },
+  {
     page: '/video',
     title: 'Видеонаблюдение'
   },

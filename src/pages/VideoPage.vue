@@ -4,6 +4,7 @@ import Card from '../components/card.vue'
 import Chips from '../components/chips.vue'
 
 import {ref} from 'vue'
+import MainMenu from "../layout/MainMenu.vue";
 
 const chipListForFilter = ref([
     {
@@ -46,6 +47,7 @@ const chipListForFilter = ref([
 
 </script>
 <template>
+    <MainMenu/>
     <div class="video-page">
         <main-layout>
             <card>
