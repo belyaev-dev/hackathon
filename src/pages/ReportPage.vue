@@ -54,8 +54,11 @@
         </div>
       </div>
 
-      <div class="container" style="flex: 1 1 100%;">
-        BOTTOM
+      <div class="container properties" style="flex: 1 1 100%;">
+        <div class="item" v-for="item in ITEMS">
+          <div class="label">{{ item.label }}</div>
+          <div class="value">{{ item.value }}</div>
+        </div>
       </div>
     </div>
 
@@ -65,9 +68,42 @@
 <script>
 import MainMenu from '../layout/MainMenu.vue'
 import ItemsTree from '../components/ItemsTree.vue'
+
+const ITEMS = [
+  {
+    label: 'Наименование помещения',
+    value: 'А420'
+  },
+  {
+    label: 'Общая площадь',
+    value: '100 м²'
+  },
+  {
+    label: 'Кадастровый номер',
+    value: '1010-420'
+  },
+  {
+    label: 'Кадастровая стоимость',
+    value: '100 000 руб'
+  },
+  {
+    label: 'Инвентарный номер',
+    value: '771010420'
+  },
+  {
+    label: 'Назначение',
+    value: 'Торговая площадь'
+  },
+]
+
 export default {
   name: 'ReportPage',
-  components: { ItemsTree, MainMenu }
+  components: { ItemsTree, MainMenu },
+  data() {
+    return {
+      ITEMS
+    }
+  }
 }
 </script>
 
@@ -78,16 +114,41 @@ export default {
   gap: 1rem;
 }
 
-
-.page-report {
-  color: #fff;
-  padding: 2rem;
-}
-
 .container {
   border: 1px solid #656565;
   border-radius: .75rem;
   padding: 1rem;
+}
+
+
+.properties {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  padding: 1rem 2rem;
+  //justify-content: space-evenly;
+
+  .item {
+    flex: 1 1 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 1.25rem;
+    font-weight: 300;
+    flex: 1 1 0;
+  }
+  .value {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.page-report {
+  color: #fff;
+  padding: 2rem;
 }
 
 .legend {
