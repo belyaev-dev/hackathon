@@ -5,6 +5,12 @@ import Chips from '../components/chips.vue'
 
 import {ref} from 'vue'
 
+import { useTasks } from '../hooks/useTasks'
+
+const {fetchAllTasks} = useTasks()
+
+fetchAllTasks()
+
 const chipListForFilter = ref([
     {
         name: 'ТЦ',

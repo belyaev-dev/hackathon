@@ -1,5 +1,6 @@
 <template>
   <MainMenu/>
+  <main-layout>
   <div class="page-report">
 
     <div class="container">
@@ -51,21 +52,23 @@
       </div>
     </div>
 
-
   </div>
+</main-layout>
 </template>
 
 <script>
+import MainLayout from '../layout/Main.vue'
 import MainMenu from '../layout/MainMenu.vue'
 export default {
   name: 'ReportPage',
-  components: { MainMenu }
+  components: { MainMenu, MainLayout }
 }
 </script>
 
 <style lang="scss">
 .page-report {
   color: #fff;
+  width: 100%;
 }
 
 .container {

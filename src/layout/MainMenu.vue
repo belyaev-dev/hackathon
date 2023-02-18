@@ -30,7 +30,7 @@ const MENU = [
     title: 'Управление'
   },
   {
-    page: '/video',
+    page: '/report',
     title: 'Видеонаблюдение'
   },
 ]
