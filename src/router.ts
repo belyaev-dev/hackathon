@@ -4,6 +4,7 @@ import DashboardPage from './pages/DashboardPage.vue'
 import RentPage from './pages/RentPage.vue'
 import TasksPage from './pages/TasksPage.vue'
 import ControlPage from './pages/ControlPage.vue'
+import ReportPage from './pages/ReportPage.vue'
 
 const routes = [
   {
@@ -25,6 +26,10 @@ const routes = [
   {
     path: '/control',
     component: ControlPage
+  },
+  {
+    path: '/report',
+    component: ReportPage
   },
 ]
 
