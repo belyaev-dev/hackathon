@@ -1,63 +1,65 @@
 <template>
   <MainMenu/>
-  <div class="page-report">
+  <main-layout>
+    <div class="page-report">
 
-    <div class="row">
-      <ItemsTree/>
+      <div class="row">
+        <ItemsTree/>
 
-      <div class="container" style="flex: 1 1 0;display:flex;flex-direction: column;justify-content: flex-end">
-        <div class="indicator-list">
-          <div class="prev"></div>
-          <div class="indicator">
-            <div class="title">Предыдущий месяц</div>
-            <div class="month">Январь</div>
-            <div class="chart">
-              <div class="bar" style="--green:1;">1</div>
-              <div class="bar" style="">2</div>
-              <div class="bar" style="--green:1;--red:.6;">3</div>
-              <div class="bar" style="--red:.2;">4</div>
+        <div class="container" style="flex: 1 1 0;display:flex;flex-direction: column;justify-content: flex-end">
+          <div class="indicator-list">
+            <div class="prev"></div>
+            <div class="indicator">
+              <div class="title">Предыдущий месяц</div>
+              <div class="month">Январь</div>
+              <div class="chart">
+                <div class="bar" style="--green:1;">1</div>
+                <div class="bar" style="">2</div>
+                <div class="bar" style="--green:1;--red:.6;">3</div>
+                <div class="bar" style="--red:.2;">4</div>
+              </div>
+              <div class="more">Подробнее</div>
             </div>
-            <div class="more">Подробнее</div>
-          </div>
-          <div class="indicator active">
-            <div class="title">Текущий месяц</div>
-            <div class="label">Общий оборот</div>
-            <div class="value">82 000</div>
-            <div class="label">Чистая прибыль</div>
-            <div class="value">34 000</div>
-            <div class="month">Февраль</div>
-            <div class="chart">
-              <div class="bar" style="--green:1;">1</div>
-              <div class="bar" style="">2</div>
-              <div class="bar" style="--green:1;--red:.6;">3</div>
-              <div class="bar" style="--red:.2;">4</div>
+            <div class="indicator active">
+              <div class="title">Текущий месяц</div>
+              <div class="label">Общий оборот</div>
+              <div class="value">82 000</div>
+              <div class="label">Чистая прибыль</div>
+              <div class="value">34 000</div>
+              <div class="month">Февраль</div>
+              <div class="chart">
+                <div class="bar" style="--green:1;">1</div>
+                <div class="bar" style="">2</div>
+                <div class="bar" style="--green:1;--red:.6;">3</div>
+                <div class="bar" style="--red:.2;">4</div>
+              </div>
+              <div class="more">Подробнее</div>
             </div>
-            <div class="more">Подробнее</div>
-          </div>
-          <div class="indicator">
-            <div class="title">Прогноз</div>
-            <div class="month">Март</div>
-            <div class="chart">
-              <div class="bar" style="--green:1;">1</div>
-              <div class="bar" style="">2</div>
-              <div class="bar" style="--green:1;--red:.6;">3</div>
-              <div class="bar" style="--red:.2;">4</div>
+            <div class="indicator">
+              <div class="title">Прогноз</div>
+              <div class="month">Март</div>
+              <div class="chart">
+                <div class="bar" style="--green:1;">1</div>
+                <div class="bar" style="">2</div>
+                <div class="bar" style="--green:1;--red:.6;">3</div>
+                <div class="bar" style="--red:.2;">4</div>
+              </div>
+              <div class="more">Подробнее</div>
             </div>
-            <div class="more">Подробнее</div>
+            <div class="next"></div>
           </div>
-          <div class="next"></div>
+
+          <div class="legend">
+            <div class="profit">Прибыль</div>
+            <div class="expense">Издержки</div>
+          </div>
         </div>
 
-        <div class="legend">
-          <div class="profit">Прибыль</div>
-          <div class="expense">Издержки</div>
-        </div>
+        <ObjectProperties style="flex: 1 1 100%;"/>
       </div>
 
-      <ObjectProperties style="flex: 1 1 100%;"/>
     </div>
-
-  </div>
+  </main-layout>
 </template>
 
 <script>

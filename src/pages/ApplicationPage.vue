@@ -2,7 +2,7 @@
 import MainLayout from '../layout/Main.vue'
 import MainMenu from '../layout/MainMenu.vue'
 import Card from '../components/card.vue'
-
+import Preloader from '../components/preloader.vue'
 
 import { useTasks } from '../hooks/useTasks'
 import { onMounted } from 'vue';
@@ -28,7 +28,7 @@ onMounted(async () => {
             </div>
 
             <div
-            
+            v-if="state.listAllTasks.length"
             class="application-page__list-task">
                 <div
                 v-for="item in state.listAllTasks"
@@ -80,6 +80,10 @@ onMounted(async () => {
                     </div>
                 </div-->
             </div>
+            <div class="application-page__preloader" v-else>
+                <preloader  />
+            </div>
+            
     </div>
 </main-layout>
 </template>
@@ -127,6 +131,7 @@ width: 100%;
 }
 
 .task-user img {
+    margin-right: 10px;
     width: 60px;
     height: 60px;
 }
@@ -151,5 +156,9 @@ width: 100%;
 
 .task-user__job-title {
     font-size: 10px;
+}
+
+.application-page__preloader {
+    display: flex;
 }
 </style>

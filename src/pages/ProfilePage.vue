@@ -116,37 +116,6 @@ const ITEMS = [
       font-size: 1.25rem;
       font-weight: 300;
     }
-
-    .btn {
-      background-color: #2A2D46;
-      border: 1px solid #656565;
-      height: 5.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.25rem;
-      font-weight: 600;
-      border-radius: .75rem;
-      cursor: pointer;
-      transition: all .2s;
-
-      &::before {
-        content: '+';
-        font-size: 3rem;
-        line-height: .75;
-        text-align: center;
-        font-weight: 300;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        margin-right: .75rem;
-      }
-
-      &:hover {
-        background-color: hsl(234, 25%, 32%);
-      }
-    }
   }
 
   .profile {

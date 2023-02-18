@@ -5,19 +5,19 @@
         Бизнес центр
         <ul>
           <li class="red">OZ-mall</li>
-          <li>
+          <li class="green">
             Галерея
             <ul>
-              <li>1 очередь</li>
-              <li>
+              <li class="red">1 очередь</li>
+              <li class="green">
                 2 очередь
                 <ul>
-                  <li>1 этаж</li>
-                  <li>
+                  <li class="red">1 этаж</li>
+                  <li class="green">
                     2 этаж
                     <ul>
-                      <li>A420</li>
-                      <li>
+                      <li class="green">A420</li>
+                      <li class="red">
                         A430
                       </li>
                     </ul>
@@ -26,14 +26,14 @@
               </li>
             </ul>
           </li>
-          <li>Красная площадь</li>
-          <li>МЕГА</li>
+          <li class="red">Красная площадь</li>
+          <li class="red">МЕГА</li>
         </ul>
       </li>
-      <li>Жилая недвижимость</li>
-      <li>Коммерческая недвижимость</li>
-      <li>Земельные участки</li>
-      <li>Апартаменты</li>
+      <li class="red">Жилая недвижимость</li>
+      <li class="red">Коммерческая недвижимость</li>
+      <li class="red">Земельные участки</li>
+      <li class="red">Апартаменты</li>
     </ul>
   </card>
 </template>

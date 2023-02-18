@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div>df</div>
+
 </template>
 
 <style scoped>

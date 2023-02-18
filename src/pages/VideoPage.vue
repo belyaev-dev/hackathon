@@ -12,35 +12,35 @@ const chipListForFilter = ref([
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'ООО',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Аренда',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
     {
-        name: 'ТЦ',
+        name: 'Продажа',
         value: ''
     },
 ])
@@ -50,18 +50,39 @@ const chipListForFilter = ref([
     <MainMenu/>
     <div class="video-page">
         <main-layout>
-            <card>
-                <div class="video-page__filter">
-                    <div class="video-page__filter-title">
-                        Фильтр
+            <div class="video-page-filter">
+                <card>
+                    <div class="video-page__filter">
+                        <div class="video-page__filter-title">
+                            Фильтр
+                        </div>
+                        <div class="video-page__container-filter">
+                            <div class="video-page__block">
+                                <chips>ТЦ</chips>
+                                <chips>Продажа</chips>
+                                <chips>Продажа</chips>
+                            </div>
+                            <div class="video-page__block">
+                                <chips>ООО</chips>
+                                <chips>Продажа</chips>
+                                <chips>Продажа</chips>
+                            </div>
+                            <div class="video-page__block">
+                                <chips>Аренда</chips>
+                                <chips>Продажа</chips>
+                                <chips>Продажа</chips>
+                            </div>
+                        </div>
                     </div>
-                    <div class="video-page__block">
-                        <chips v-for="item in chipListForFilter">
-                            {{ item.name }}
-                        </chips>
-                    </div>
-                </div>
-            </card>
+                </card>
+                <div class="btn">Добавить объект</div>
+            </div>
+            <div class="camcorder">
+                <card>
+                    <img src="../assets/camcoder.png" alt="">
+                    <span>ул. Рашпилевская 19</span>
+                </card>
+            </div>
         </main-layout>
     </div>
 </template>
@@ -72,9 +93,41 @@ const chipListForFilter = ref([
     margin-bottom: 25px;
 }
 
+.video-page-filter .card {
+    max-width: 320px;
+    margin-bottom: 15px;
+}
+
 .video-page__block {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.video-page .main-layout {
+    align-items: flex-start;
+}
+
+.camcorder {
+    margin-left: 15px;
+}
+
+.camcorder .card {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camcorder .card img {
+    margin-bottom: 20px;
+}
+
+.video-page__container-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 </style>
