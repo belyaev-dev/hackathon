@@ -85,11 +85,4 @@ li span {
   justify-content: flex-start;
   align-items:  center;
 }
-
-img {
-  width: 15px;
-    height: 15px;
-    display: block;
-    margin-right: 10px;
-}
 </style>

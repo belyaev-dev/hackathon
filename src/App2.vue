@@ -41,7 +41,21 @@ body {
 
   >[class^="page-"] {
     flex: 1 1 0;
+    color: #fff;
+    padding: 2rem;
   }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container {
+  border: 1px solid #656565;
+  border-radius: .75rem;
+  padding: 1rem;
 }
 
 .main-menu {
