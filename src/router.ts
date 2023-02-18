@@ -5,6 +5,7 @@ import RentPage from './pages/RentPage.vue'
 import TasksPage from './pages/TasksPage.vue'
 import ControlPage from './pages/ControlPage.vue'
 import VideoPage from './pages/VideoPage.vue'
+import ReportPage from './pages/ReportPage.vue'
 
 const routes = [
   {
@@ -30,6 +31,10 @@ const routes = [
   {
     path: '/video',
     component: VideoPage
+  },
+  {
+    path: '/report',
+    component: ReportPage
   },
 ]
 
