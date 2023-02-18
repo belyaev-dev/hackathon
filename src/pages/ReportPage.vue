@@ -1,65 +1,63 @@
 <template>
   <MainMenu/>
-  <main-layout>
-    <div class="page-report">
+  <div class="page-report">
 
-      <div class="row">
-        <ItemsTree/>
+    <div class="row">
+      <ItemsTree/>
 
-        <div class="container" style="flex: 1 1 0;display:flex;flex-direction: column;justify-content: flex-end">
-          <div class="indicator-list">
-            <div class="prev"></div>
-            <div class="indicator">
-              <div class="title">Предыдущий месяц</div>
-              <div class="month">Январь</div>
-              <div class="chart">
-                <div class="bar" style="--green:1;">1</div>
-                <div class="bar" style="">2</div>
-                <div class="bar" style="--green:1;--red:.6;">3</div>
-                <div class="bar" style="--red:.2;">4</div>
-              </div>
-              <div class="more">Подробнее</div>
+      <div class="container" style="flex: 1 1 0;display:flex;flex-direction: column;justify-content: flex-end">
+        <div class="indicator-list">
+          <div class="prev"></div>
+          <div class="indicator">
+            <div class="title">Предыдущий месяц</div>
+            <div class="month">Январь</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
             </div>
-            <div class="indicator active">
-              <div class="title">Текущий месяц</div>
-              <div class="label">Общий оборот</div>
-              <div class="value">82 000</div>
-              <div class="label">Чистая прибыль</div>
-              <div class="value">34 000</div>
-              <div class="month">Февраль</div>
-              <div class="chart">
-                <div class="bar" style="--green:1;">1</div>
-                <div class="bar" style="">2</div>
-                <div class="bar" style="--green:1;--red:.6;">3</div>
-                <div class="bar" style="--red:.2;">4</div>
-              </div>
-              <div class="more">Подробнее</div>
-            </div>
-            <div class="indicator">
-              <div class="title">Прогноз</div>
-              <div class="month">Март</div>
-              <div class="chart">
-                <div class="bar" style="--green:1;">1</div>
-                <div class="bar" style="">2</div>
-                <div class="bar" style="--green:1;--red:.6;">3</div>
-                <div class="bar" style="--red:.2;">4</div>
-              </div>
-              <div class="more">Подробнее</div>
-            </div>
-            <div class="next"></div>
+            <div class="more">Подробнее</div>
           </div>
-
-          <div class="legend">
-            <div class="profit">Прибыль</div>
-            <div class="expense">Издержки</div>
+          <div class="indicator active">
+            <div class="title">Текущий месяц</div>
+            <div class="label">Общий оборот</div>
+            <div class="value">82 000</div>
+            <div class="label">Чистая прибыль</div>
+            <div class="value">34 000</div>
+            <div class="month">Февраль</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
+            </div>
+            <div class="more">Подробнее</div>
           </div>
+          <div class="indicator">
+            <div class="title">Прогноз</div>
+            <div class="month">Март</div>
+            <div class="chart">
+              <div class="bar" style="--green:1;">1</div>
+              <div class="bar" style="">2</div>
+              <div class="bar" style="--green:1;--red:.6;">3</div>
+              <div class="bar" style="--red:.2;">4</div>
+            </div>
+            <div class="more">Подробнее</div>
+          </div>
+          <div class="next"></div>
         </div>
 
-        <ObjectProperties style="flex: 1 1 100%;"/>
+        <div class="legend">
+          <div class="profit">Прибыль</div>
+          <div class="expense">Издержки</div>
+        </div>
       </div>
 
+      <ObjectProperties style="flex: 1 1 100%;"/>
     </div>
-  </main-layout>
+
+  </div>
 </template>
 
 <script>
@@ -70,7 +68,12 @@ import ObjectProperties from '../components/ObjectProperties.vue'
 
 export default {
   name: 'ReportPage',
-  components: { ObjectProperties, ItemsTree, MainMenu, MainLayout },
+  components: {
+    ObjectProperties,
+    ItemsTree,
+    MainMenu,
+    MainLayout
+  },
 }
 </script>
 
@@ -80,7 +83,7 @@ export default {
   flex-direction: column;
   gap: .5rem;
 
-  >* {
+  > * {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -98,6 +101,7 @@ export default {
   .profit {
     color: #04B400;
   }
+
   .expense {
     color: #E00000;
   }
@@ -182,6 +186,7 @@ export default {
           background-color: #8E8E8E;
           border-radius: .25rem;
         }
+
         &::after {
           content: '';
           display: block;
@@ -199,14 +204,17 @@ export default {
     .label {
       font-size: .875rem;
     }
+
     .value {
       font-size: 2rem;
       margin-bottom: .5rem;
     }
+
     .month {
       font-size: 1.25rem;
       margin-bottom: .75rem;
     }
+
     .more {
       font-size: .875rem;
       padding: .25rem 1rem;
@@ -222,6 +230,7 @@ export default {
           &::before {
             background-color: #04B400;
           }
+
           &::after {
             background-color: #E00000;
           }

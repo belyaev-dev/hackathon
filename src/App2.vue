@@ -36,8 +36,12 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  align-items: center;
+
+  >* {
+    width: 100%;
+    max-width: 1400px;
+  }
 
   >[class^="page-"] {
     flex: 1 1 0;
@@ -67,7 +71,6 @@ body {
   --menu-bd: hsl(var(--hue), 60%, 93%);
 
   min-width: 250px;
-  border-right: 1px solid var(--menu-bd);
   display: flex;
   align-items: center;
 
