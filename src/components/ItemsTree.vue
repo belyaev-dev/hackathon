@@ -2,23 +2,23 @@
   <card style="width: 24rem;">
     <ul>
       <li class="green">
-        Бизнес центр
+        <span>Бизнес центр</span>
         <ul>
-          <li class="red">OZ-mall</li>
+          <li class="red"><span>OZ-mall</span></li>
           <li class="green">
-            Галерея
+            <span>Галерея</span>
             <ul>
-              <li class="red">1 очередь</li>
+              <li class="red"><span>1 очередь</span></li>
               <li class="green">
-                2 очередь
+                <span>2 очередь</span>
                 <ul>
-                  <li class="red">1 этаж</li>
+                  <li class="red"><span>1 этаж</span></li>
                   <li class="green">
-                    2 этаж
+                    <span>2 этаж</span>
                     <ul>
-                      <li class="active">A420</li>
+                      <li class="active"><span>A420</span></li>
                       <li class="">
-                        A430
+                        <span>A430</span>
                       </li>
                     </ul>
                   </li>
@@ -26,14 +26,13 @@
               </li>
             </ul>
           </li>
-          <li class="red">Красная площадь</li>
-          <li class="red">МЕГА</li>
+          <li class="red"><span>Красная площадь</span></li>
         </ul>
       </li>
-      <li class="red">Жилая недвижимость</li>
-      <li class="red">Коммерческая недвижимость</li>
-      <li class="red">Земельные участки</li>
-      <li class="red">Апартаменты</li>
+      <li class="red"><span>Жилая недвижимость</span></li>
+      <li class="red"><span>Коммерческая недвижимость</span></li>
+      <li class="red"><span>Земельные участки</span></li>
+      <li class="red"><span>Апартаменты</span></li>
     </ul>
   </card>
 </template>
@@ -115,8 +114,22 @@ li {
   }
 
   */
+
+  span {
+    flex: 1 1 0;
+    cursor: pointer;
+    transition: all .2s;
+    display: inline-block;
+
+    &:hover {
+      background-color: hsla(120, 10%, 80%, 0.35);
+    }
+  }
+
   &.active {
-    background-color: hsla(120, 100%, 80%, 0.4);
+    span {
+      background-color: hsla(120, 100%, 80%, 0.35);
+    }
   }
 }
 

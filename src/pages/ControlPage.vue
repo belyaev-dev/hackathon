@@ -33,7 +33,8 @@ const ITEMS = [
       <ItemsTree/>
       <div class="container object-view" style="flex: 1 1 0;display:flex;flex-direction: column;">
 
-        <div class="right">
+        <div class="top">
+          <div class="name">A420</div>
           <chips>Наблюдение</chips>
         </div>
         <div class="map">
@@ -59,9 +60,15 @@ const ITEMS = [
   .object-view {
     display: flex;
 
-    .right {
+    .top {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+
+      .name {
+        font-size: 2rem;
+        font-weight: 600;
+      }
     }
 
     .map {
