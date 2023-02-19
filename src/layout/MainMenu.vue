@@ -17,6 +17,7 @@
 <script>
 
 const MENU = [
+/*
   {
     page: '/',
     title: 'Дашборд'
@@ -29,6 +30,7 @@ const MENU = [
     page: '/rent',
     title: 'Аренда'
   },
+*/
   {
     page: '/control',
     title: 'Управление'
