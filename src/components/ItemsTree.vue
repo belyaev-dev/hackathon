@@ -5,15 +5,15 @@
         Бизнес центр
         <ul>
           <li class="red">OZ-mall</li>
-          <li class="red">
+          <li class="green">
             Галерея
             <ul>
-              <li class="green">1 очередь</li>
-              <li class="red">
+              <li class="red">1 очередь</li>
+              <li class="green">
                 2 очередь
                 <ul>
-                  <li class="green">1 этаж</li>
-                  <li class="red">
+                  <li class="red">1 этаж</li>
+                  <li class="green">
                     2 этаж
                     <ul>
                       <li class="active">A420</li>
@@ -27,13 +27,13 @@
             </ul>
           </li>
           <li class="red">Красная площадь</li>
-          <li class="green">МЕГА</li>
+          <li class="red">МЕГА</li>
         </ul>
       </li>
-      <li class="green">Жилая недвижимость</li>
-      <li class="green">Коммерческая недвижимость</li>
+      <li class="red">Жилая недвижимость</li>
+      <li class="red">Коммерческая недвижимость</li>
       <li class="red">Земельные участки</li>
-      <li class="green">Апартаменты</li>
+      <li class="red">Апартаменты</li>
     </ul>
   </card>
 </template>
@@ -67,6 +67,31 @@ li {
   &::before {
     content: '';
     display: inline-block;
+    height: .5rem;
+    width: .5rem;
+    border: 0 solid #aaa;
+    border-width: 2px 2px 0 0;
+    margin-right: .25rem;
+    transform: translate(-.25rem, .625rem) rotate(45deg);
+    visibility: hidden;
+  }
+
+  &.green {
+    &::before {
+      transform: translate(-.25rem, .625rem) rotate(135deg);
+      visibility: visible;
+    }
+  }
+  &.red {
+    &::before {
+      visibility: visible;
+    }
+  }
+
+  /*
+  &::before {
+    content: '';
+    display: inline-block;
     height: 1.25em;
     width: .75em;
     margin-right: .25rem;
@@ -89,8 +114,9 @@ li {
     }
   }
 
+  */
   &.active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: hsla(120, 100%, 80%, 0.4);
   }
 }
 
