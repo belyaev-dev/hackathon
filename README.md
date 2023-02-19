@@ -1,18 +1,55 @@
-# Vue 3 + TypeScript + Vite
+# Leasease Hackathon Frontend <a href="https://vuejs.org/" target="blank"><svg class="logo" viewBox="0 0 128 128" width="24" height="24" data-v-e0ef77de=""><path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z" data-v-e0ef77de=""></path><path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z" data-v-e0ef77de=""></path></svg></a>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Frontend приложения Leasease для использования на хакатоне Строительство 2023 г.
 
-## Recommended IDE Setup
+Кейс: Смарт-управление
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Привет Аквариум!
 
-## Type Support For `.vue` Imports in TS
+## Вклад ✨
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Проект стал возможен благодаря этим замечательным людям
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/belyaev-dev"><img src="https://avatars.githubusercontent.com/u/74226935?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Денис Беляев</b></sub></a><br /><a href="https://github.com/belyaev-dev/hackaton-backend/commits?author=belyaev-dev" title="Код">💻</a> <a href="https://github.com/belyaev-dev/hackaton-backend/commits?author=belyaev-dev" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://dnlytras.com"><img src="https://i.ibb.co/PMBX1ph/photo-2022-11-18-15-29-05.jpg" width="100px;" alt=""/><br /><sub><b>Артем Федосов</b></sub></a><br /><a href="https://www.figma.com/file/4jQS2EN24RVskaoFO6TKtC/Untitled" title="Дизайн">🎨</a> <a title="Идеи">🤔</a></td>
+    <td align="center"><a href="https://github.com/EndorphinE19"><img src="https://i.ibb.co/9gvRpgn/IMG-20230219-102050-817-1.png" width="100px;" alt=""/><br /><sub><b>Евгений Кривонос</b></sub></a><br /><a href="https://github.com/belyaev-dev/hackathon/commits?author=EndorphinE19" title="Код">💻</a></td>
+    <td align="center"><a href="https://github.com/xeloo"><img src="https://avatars.githubusercontent.com/u/2788802?s=100&v=4" width="100px;" alt=""/><br /><sub><b>Александр Силич</b></sub></a><br /><a href="https://github.com/belyaev-dev/hackathon/commits?author=xeloo" title="Код">💻</a></td>
+  </tr>
+</table>
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+## Руководство
+
+### Установка
+
+1. Убедитесь, что у вас установлена [Node.js](https://nodejs.org)(>= LTS).
+2. Запустите `npm install` чтобы установить зависимости.
+
+### Запуск приложения 
+
+```bash
+# development mode
+$ npm run start:dev
+
+# production
+$ npm run build
+```
+
+### Работа с тестами
+
+```bash
+# unit tests
+$ yarn test
+
+# e2e tests
+$ yarn test:e2e
+
+# test coverage
+$ yarn test:cov
+```
