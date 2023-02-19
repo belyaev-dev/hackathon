@@ -109,6 +109,7 @@ body {
         padding-top: .5rem;
         font-size: .75rem;
         width: 7rem;
+        text-align: center;
       }
     }
   }
