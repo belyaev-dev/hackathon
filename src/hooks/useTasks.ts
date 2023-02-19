@@ -29,6 +29,7 @@ export const useTasks = () => {
    */
   const fetchAllTasks = async () => {
     const { data } = await useAxios("tasks", { method: "GET" }, instance);
+    console.log(data)
     if (data.value.count > 0) state.listAllTasks = data.value;
   };
 
