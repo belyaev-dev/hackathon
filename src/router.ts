@@ -16,7 +16,8 @@ const routes = [
   },
   {
     path: '/',
-    component: DashboardPage
+    component: ControlPage
+    // component: DashboardPage
   },
   {
     path: '/tasks',

@@ -8,9 +8,10 @@ export default {
   created () {
     const user = JSON.parse(window.localStorage.getItem('user') ?? '{}')
 
+
     if ( user.username ) {
     // if ( false && user.username ) {
-    //   this.$router.push('/')
+      this.$router.push('/control')
     } else {
       this.$router.push('/login')
     }

@@ -38,7 +38,8 @@ export default {
 
       setTimeout(() => {
         this.lock = false
-        this.$router.push('/')
+        this.$router.push('/control')
+        // this.$router.push('/')
       }, 500)
     }
   }
