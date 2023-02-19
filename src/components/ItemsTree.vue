@@ -53,7 +53,7 @@ ul {
   padding: 0;
 
   ul {
-    margin-top: .5rem;
+    //margin-top: .5rem;
     padding-left: 1.5rem;
   }
 }
