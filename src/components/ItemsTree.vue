@@ -16,8 +16,8 @@
                   <li class="red">
                     2 этаж
                     <ul>
-                      <li class="red">A420</li>
-                      <li class="green">
+                      <li class="active">A420</li>
+                      <li class="">
                         A430
                       </li>
                     </ul>
@@ -67,22 +67,30 @@ li {
   &::before {
     content: '';
     display: inline-block;
-    width: 1em;
     height: 1.25em;
+    width: .75em;
     margin-right: .25rem;
   }
 
   &.green {
     &::before {
-      background: url(../assets/Icon.png) no-repeat;
+      background: url("../assets/Icon(1).png") no-repeat;
       background-position: center;
+      filter: saturate(0) brightness(1.5);
+      width: 1em;
     }
   }
   &.red {
     &::before {
-      background: url("../assets/Icon(1).png") no-repeat;
+      background: url(../assets/Icon.png) no-repeat;
       background-position: center;
+      filter: saturate(0);
+      width: 1em;
     }
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, 0.4);
   }
 }
 
