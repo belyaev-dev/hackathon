@@ -3,13 +3,13 @@ import { instance } from '../api/apiCreate'
 import {reactive} from 'vue'
 
 
-export type Task {
+interface Task {
     status: string;
     title: string;
     description: string;
 }
 
-export type TaskState {
+interface TaskState {
     listAllTasks: Task[];
     titleTask: any;
     descriptionTask: any;
