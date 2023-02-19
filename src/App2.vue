@@ -108,7 +108,7 @@ body {
         transform: translateX(-50%);
         padding-top: .5rem;
         font-size: .75rem;
-        width: 5rem;
+        width: 7rem;
       }
     }
   }
