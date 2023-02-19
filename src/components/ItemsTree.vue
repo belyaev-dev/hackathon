@@ -16,7 +16,7 @@
                   <li class="red">
                     2 этаж
                     <ul>
-                      <li>A420</li>
+                      <li class="red">A420</li>
                       <li class="green">
                         A430
                       </li>
